@@ -14,8 +14,3 @@ export const imageStyle: CSSProperties = {
   objectFit: "cover",
   borderRadius: "8px"
 };
-
-export const skeletonStyle: CSSProperties = {
-  borderRadius: "8px",
-  marginBottom: "8px"
-};

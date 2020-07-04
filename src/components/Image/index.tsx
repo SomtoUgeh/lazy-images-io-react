@@ -1,20 +1,11 @@
 import * as React from "react";
+import { ProductType } from "types/Product";
 import { imageWrapperStyle, imageStyle } from "./styles";
-import { useImageOnLoad, ImageOnLoadType } from "./useImageLoad";
+import { useImageOnLoad, ImageOnLoadType } from "hooks/useImageLoad";
 import {
   useIntersectionObserver,
   IntersectionStatus
-} from "./useIntersectionObserver";
-
-type ProductType = {
-  name: string;
-  price: number;
-  imageUrl: string;
-  description: string;
-  isShippingFree: boolean;
-  discount: number;
-  thumbUrl: string;
-};
+} from "hooks/useIntersectionObserver";
 
 type ImageUrlType = Pick<ProductType, "imageUrl" | "thumbUrl">;
 type ImageAttrType = { imageAlt: string; width: string };
